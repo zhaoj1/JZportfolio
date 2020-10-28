@@ -1,22 +1,40 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header.js';
+import Contact from './components/Contact.js';
 import ReactFullpage from '@fullpage/react-fullpage';
 
 export default class App extends React.Component{
 
-  
-
   render(){
     return (
       <div className="App">
-        <Header />
         <ReactFullpage
-          licenseKey = {'YOUR_KEY_HERE'}
           scrollingSpeed = {1000}
+          fixedElements =  '.header'
+          anchors={['home','about','projects', 'contact']}
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
+                <div className="header">
+                  <span 
+                    className='name'
+                    onClick={() => fullpageApi.moveTo('home')}
+                  >Justin Zhao</span> 
+                  <div className='links'>
+                    <span 
+                      className='link'
+                      onClick={() => fullpageApi.moveTo('about')}
+                    >ABOUT</span>
+                    <span 
+                      className='link'
+                      onClick={() => fullpageApi.moveTo('projects')}
+                    >PROJECTS</span>
+                    <span 
+                      className='link'
+                      onClick={() => fullpageApi.moveTo('contact')}
+                    >CONTACT</span>
+                  </div>
+                </div>
                 <div className="section">
                   <p>HOME</p>
                 </div>
@@ -27,7 +45,7 @@ export default class App extends React.Component{
                   <p>PROJECTS</p>
                 </div>
                 <div className="section">
-                  <p>CONTACT</p>
+                  <Contact />
                 </div>
               </ReactFullpage.Wrapper>
             );

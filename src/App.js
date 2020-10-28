@@ -11,14 +11,14 @@ export default class App extends React.Component{
         <ReactFullpage
           scrollingSpeed = {1000}
           fixedElements =  '.header'
-          anchors={['home','about','projects', 'contact']}
+          anchors={['','about','projects', 'contact']}
           render={({ state, fullpageApi }) => {
             return (
               <ReactFullpage.Wrapper>
                 <div className="header">
                   <span 
                     className='name'
-                    onClick={() => fullpageApi.moveTo('home')}
+                    onClick={() => fullpageApi.moveTo('')}
                   >Justin Zhao</span> 
                   <div className='links'>
                     <span 

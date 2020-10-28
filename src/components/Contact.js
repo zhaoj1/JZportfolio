@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import '../App.css';
+import github from '../assets/GitHub-Mark-120px-plus.png'
+import linkedin from '../assets/LI-In-Bug.png'
 
 function Contact() {
 
@@ -9,18 +11,14 @@ function Contact() {
 
   return (
     <div className="contact">
-      <p>If you would like to reach out to me, please fill out the form below and I will get back to you ASAP!</p>
-      <form>
-        <label>Name: </label>
-        <input name='name' value={name} onChange={(e) => setName(e.target.value)} /><br></br>
-        <label>Email: </label>
-        <input name='email' value={email} onChange={(e) => setEmail(e.target.value)} /><br></br>
-        <label>Message: </label>
-        <input name='message' type='text' value={message} onChange={(e) => setMessage(e.target.value)} />
-      </form>
-
+      <p>If you would like to reach out to me, please shoot me an email at <a href={`mailto:justinzhao265@gmail.com`} > justinzhao265@gmail.com</a> and I will get back to you ASAP!</p>
       <p>Otherwise, let's connect!</p>
-      linkedin github
+      <a href='https://www.linkedin.com/in/justin-zh/' target="_blank">
+        <img src={linkedin} height='50' ></img>  
+      </a>
+      <a href='https://github.com/zhaoj1' target="_blank">
+        <img src={github} height='50' ></img>  
+      </a>
     </div>
   );
 }

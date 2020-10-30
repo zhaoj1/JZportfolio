@@ -43,3 +43,19 @@ body, html{
 .link:hover{
   cursor: pointer;
 }
+
+.contact-links-container{
+  width: 15%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.contact-links{
+  transition: all .5s ease-in-out;
+}
+
+.contact-links:hover{
+  transform: scale(1.5)
+}

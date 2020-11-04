@@ -59,17 +59,21 @@ body, html{
 }
 
 .contact-links-container{
-  width: 15%;
+  width: 35%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  margin-top: 2%;
+  justify-content: space-around;
+  margin-top: 5%;
 }
 
 .contact-links{
-  transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out; 
 }
 
 .contact-links:hover{
-  transform: scale(1.5)
+  transform: scale(1.4)
+}
+
+.home{
+  margin: auto
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Contact from './components/Contact.js';
+import Home from './components/Home.js';
 import CustomControls from './components/CustomControls.js';
 import { FullPage, Slide } from 'react-full-page';
 
@@ -12,7 +13,7 @@ export default class App extends React.Component{
         <FullPage controls={CustomControls} >
             <Slide>
               <div className='slide-contents'>
-                <p style={{'margin':'auto'}}>HOME</p>
+                <Home/>
               </div>
             </Slide>
             <Slide>

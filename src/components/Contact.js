@@ -8,13 +8,13 @@ function Contact() {
   return (
     <div className="contact">
       <div className='contact-content'>
-        <p>If you would like to reach out to me, please shoot me an email at 
+        <p>If you would like to reach out to me, please shoot me an email at&nbsp;
           <a 
             id='email' 
             href={`mailto:justinzhao265@gmail.com`} 
             value='justinzhao265@gmail.com'
-          > justinzhao265@gmail.com</a>
-          and I will get back to you ASAP!
+          >justinzhao265@gmail.com</a>
+          &nbsp;and I will get back to you ASAP!
         </p>
         <p>Otherwise, let's connect!</p>
         <div className='contact-links-container'>

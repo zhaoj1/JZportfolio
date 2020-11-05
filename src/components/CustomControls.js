@@ -1,5 +1,4 @@
 import React from 'react';
-import { FullPage } from 'react-full-page';
 
 export default class App extends React.Component{
 

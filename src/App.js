@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import Contact from './components/Contact.js';
-import Home from './components/Home.js';
 import CustomControls from './components/CustomControls.js';
+import Home from './components/Home.js';
+import About from './components/About.js';
+import Contact from './components/Contact.js';
 import { FullPage, Slide } from 'react-full-page';
 
 export default class App extends React.Component{
@@ -18,7 +19,7 @@ export default class App extends React.Component{
             </Slide>
             <Slide>
               <div className='slide-contents'>
-                <p style={{'margin':'auto'}}>ABOUT</p>
+                <About />
               </div>
             </Slide>
             <Slide>

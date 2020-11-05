@@ -74,6 +74,28 @@ body, html{
   transform: scale(1.4)
 }
 
-.home{
-  margin: auto
+.home, .about{
+  margin: auto;
+  width: 100%;
+}
+
+.tech-container{
+  margin: auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  column-gap: 5%;
+  row-gap: 5%;
+  justify-content: center;
+}
+
+.tech{
+  border: solid black 5px;
+  padding: 5%;
+}
+
+.tech-familiar{
+  grid-column-start: 1;
+  grid-column-end: 5;
+  text-align: center;
 }

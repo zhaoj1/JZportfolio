@@ -22,7 +22,7 @@ body, html{
   z-index: 2;
 }
 
-.name{
+.name, .selected-name{
   position: absolute;
   left: 1%;
   top: 50%;
@@ -30,7 +30,11 @@ body, html{
   transform: translateY(-50%);
 }
 
-.name:hover{
+.selected-name{
+  /* border-bottom: black solid 1px; */
+}
+
+.name:hover, .selected-name:hover, .link:hover{
   cursor: pointer;
 }
 
@@ -43,10 +47,6 @@ body, html{
   justify-content: space-between;
   display: flex;
   width: 20%;
-}
-
-.link:hover{
-  cursor: pointer;
 }
 
 .contact{

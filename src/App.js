@@ -11,7 +11,7 @@ export default class App extends React.Component{
   render(){
     return (
       <div className="App">   
-        <FullPage controls={CustomControls} >
+        <FullPage controls={CustomControls}  >
             <Slide>
               <div className='slide-contents'>
                 <Home/>

@@ -83,7 +83,7 @@ body, html{
   margin: auto;
   width: 60%;
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 15% 15% 15% 15% 15% 15%;
   column-gap: 5%;
   row-gap: 5%;
   justify-content: center;
@@ -96,6 +96,6 @@ body, html{
 
 .tech-familiar{
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 7;
   text-align: center;
 }

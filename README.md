@@ -1,7 +1,7 @@
 ## Justin Zhao Portfolio Website
 
 ### Technologies
-[React.js](https://reactjs.org/)
+[React.js](https://reactjs.org/)    
 [react-full-page](https://github.com/zwug/react-full-page)
 
 ### Contact

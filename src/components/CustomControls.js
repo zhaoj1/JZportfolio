@@ -4,24 +4,31 @@ function CustomControls(props){
 
     return (
       <div className="header" >
-        <span 
-          // className='name'
+        <div 
           className={props.getCurrentSlideIndex() == 0 ? 'selected-name' : 'name'}
           onClick={() => props.scrollToSlide(0)}
-        >Justin Zhao</span> 
+        >
+          <p>Justin Zhao</p>
+        </div> 
         <div className='links'>
-          <span 
-            className='link'
+          <div 
+            className={props.getCurrentSlideIndex() == 1 ? 'selected-link' : 'link'}
             onClick={() => props.scrollToSlide(1)}
-          >ABOUT</span>
-          <span 
-            className='link'
+          >
+            <p>ABOUT</p>
+          </div>
+          <div 
+            className={props.getCurrentSlideIndex() == 2 ? 'selected-link' : 'link'}
             onClick={() => props.scrollToSlide(2)}
-          >PROJECTS</span>
-          <span 
-            className='link'
+          >
+            <p>PROJECTS</p>
+          </div>
+          <div 
+            className={props.getCurrentSlideIndex() == 3 ? 'selected-link' : 'link'}
             onClick={() => props.scrollToSlide(3)}
-          >CONTACT</span>
+          >
+            <p>CONTACT</p>
+          </div>
         </div>
       </div>
     )

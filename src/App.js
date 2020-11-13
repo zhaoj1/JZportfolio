@@ -4,6 +4,7 @@ import CustomControls from './components/CustomControls.js';
 import Home from './components/Home.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
+import Projects from './components/Projects.js';
 import { FullPage, Slide } from 'react-full-page';
 
 export default class App extends React.Component{
@@ -11,7 +12,10 @@ export default class App extends React.Component{
   render(){
     return (
       <div className="App">   
-        <FullPage controls={CustomControls}  >
+        <FullPage 
+          controls={CustomControls} 
+          duration={1450}
+        >
             <Slide>
               <div className='slide-contents'>
                 <Home/>
@@ -24,7 +28,7 @@ export default class App extends React.Component{
             </Slide>
             <Slide>
               <div className='slide-contents'>
-                <p style={{'margin':'auto'}}>PROJECTS</p>
+                <Projects />
               </div>
             </Slide>
             <Slide>

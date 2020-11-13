@@ -85,7 +85,7 @@ body, html{
   transform: scale(1.4)
 }
 
-.home, .about{
+.home, .about, .projects{
   margin: auto;
   width: 100%;
 }
@@ -116,4 +116,18 @@ body, html{
   grid-column-start: 1;
   grid-column-end: 7;
   text-align: center;
+}
+
+.projects-container{
+  margin: auto;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% ;
+  column-gap: 2vw;
+  row-gap: 2vw;
+  justify-content: center;
+}
+
+.project-card{
+  border: solid black 1px;
 }

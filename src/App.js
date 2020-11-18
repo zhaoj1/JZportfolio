@@ -7,37 +7,37 @@ import Contact from './components/Contact.js';
 import Projects from './components/Projects.js';
 import { FullPage, Slide } from 'react-full-page';
 
-export default class App extends React.Component{
+function App(){
 
-  render(){
-    return (
-      <div className="App">   
-        <FullPage 
-          controls={CustomControls} 
-          duration={1450}
-        >
-            <Slide>
-              <div className='slide-contents'>
-                <Home/>
-              </div>
-            </Slide>
-            <Slide>
-              <div className='slide-contents'>
-                <About />
-              </div>
-            </Slide>
-            <Slide>
-              <div className='slide-contents'>
-                <Projects />
-              </div>
-            </Slide>
-            <Slide>
-              <div className='slide-contents'>
-                <Contact />
-              </div>
-            </Slide>
-        </FullPage>
-      </div>
-    );   
-  }
+  return (
+    <div className="App">   
+      <FullPage 
+        controls={CustomControls} 
+        duration={1450}
+      >
+          <Slide>
+            <div className='slide-contents'>
+              <Home/>
+            </div>
+          </Slide>
+          <Slide>
+            <div className='slide-contents'>
+              <About />
+            </div>
+          </Slide>
+          <Slide>
+            <div className='slide-contents'>
+              <Projects />
+            </div>
+          </Slide>
+          <Slide>
+            <div className='slide-contents'>
+              <Contact />
+            </div>
+          </Slide>
+      </FullPage>
+    </div>
+  );   
 }
+
+export default App;
